@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Novos valores e Propriedades de CSS" />
     <title>FlexBlog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <div class="superinfo-bg">
@@ -184,11 +186,11 @@
       <div class="newsletter-info">
         <h2>Newsletter</h2>
         <p>assine e fique por dentro das novidades</p>
-        <form>
-          <input type="email" name="email" id="email" />
-          <button type="submit">Assinar</button>
-        </form>
       </div>
+      <form class="newsletter-form">
+        <input type="email" name="email" id="email" placeholder="Seu email" />
+        <button type="submit">Assinar</button>
+      </form>
     </section>
 
     <footer class="footer">
